@@ -57,7 +57,7 @@ class _CategoriesPageState extends State<CategoriesPage> {
                 : const SizedBox(),
             Expanded(
               child: WebView(
-                initialUrl: 'https://ifeomachukwuka.rechargenow.ng/buy-online',
+                initialUrl: 'https://ifeomachukwuka.ng/buy-online',
                 javascriptMode: JavascriptMode.unrestricted,
                 onWebViewCreated: (WebViewController controller) {
                   _webViewController = controller;
@@ -94,7 +94,7 @@ class _CategoriesPageState extends State<CategoriesPage> {
                     label: 'IfeomaChukwuka',
                     index: 2,
                     onPressed: () {
-                      navigateToUrl('https://ifeomachukwuka.rechargenow.ng');
+                      navigateToUrl('https://ifeomachukwuka.ng');
                     },
                   ),
                   buildButton(
@@ -103,7 +103,7 @@ class _CategoriesPageState extends State<CategoriesPage> {
                     index: 3,
                     onPressed: () {
                       navigateToUrl(
-                          'https://ifeomachukwuka.rechargenow.ng/contact-us');
+                          'https://ifeomachukwuka.ng/contact-us');
                     },
                   ),
                   buildButton(
@@ -112,7 +112,7 @@ class _CategoriesPageState extends State<CategoriesPage> {
                     index: 4,
                     onPressed: () {
                       navigateToUrl(
-                          'https://ifeomachukwuka.rechargenow.ng/auctions/mobile-app-advert');
+                          'https://ifeomachukwuka.ng/auctions/mobile-app-advert');
                     },
                   ),
                 ],

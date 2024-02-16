@@ -8,6 +8,7 @@ import 'IntroPageAuction.dart';
 import 'IntroPageAdverts.dart';
 import 'Admin.dart';
 import 'splash_screen.dart'; // Import the splash screen
+import 'webview.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -119,12 +120,11 @@ class _GuestLoginScreenState extends State<GuestLoginScreen> {
 
             SizedBox(height: 20),
             ElevatedButton(
-              onPressed: () async {
-                await _openWebView(
-                  context,
-                  "https://ifeomachukwuka.rechargenow.ng/app/dashboard",
-                );
-              },
+              onPressed: () => openWebView(
+                'https://ifeomachukwuka.ng/app/dashboard',
+                'IfeomaChukwuka',
+                context,
+              ),
               style: ElevatedButton.styleFrom(
                 primary: Color.fromARGB(255, 255, 255, 255),
                 padding: EdgeInsets.symmetric(horizontal: 40, vertical: 15),
@@ -147,32 +147,21 @@ class _GuestLoginScreenState extends State<GuestLoginScreen> {
               children: [
                 GestureDetector(
                   onTap: () async {
-                    await _openWebView(
-                      context,
-                      "https://ifeomachukwuka.rechargenow.ng/app/register",
+                    openWebView(
+                      'https://ifeomachukwuka.ng/app/dashboard', // URL to open in the web view
+                      'IfeomaChukwuka', // Title of the web view
+                      context, // BuildContext
                     );
                   },
                   child: Text(
-                    'REGISTER | ',
+                    'REGISTER | ', // Text displayed on the screen
                     style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 18,
+                      color: Colors.white, // Text color
+                      fontSize: 18, // Text size
                     ),
                   ),
                 ),
-                // GestureDetector(
-                //   onTap: () async {
-                //     await _openGuestLogin(context);
-                //   },
-                //   child: Text(
-                //     'GUEST LOGIN1',
-                //     style: TextStyle(
-                //       color: Colors.white,
-                //       fontSize: 18,
-                //     ),
-                //   ),
-                // ),
-                //SizedBox(width: 16), // Added space
+                
                 GestureDetector(
                   onTap: () async {
                     await _openGuestPage(context);
@@ -191,11 +180,12 @@ class _GuestLoginScreenState extends State<GuestLoginScreen> {
             SizedBox(height: 10),
             GestureDetector(
               onTap: () async {
-                await _openWebView(
-                  context,
-                  "https://ifeomachukwuka.rechargenow.ng/forgot-password",
-                );
-              },
+                    openWebView(
+                      'https://ifeomachukwuka.ng/app/forgot-password', // URL to open in the web view
+                      'IfeomaChukwuka', // Title of the web view
+                      context, // BuildContext
+                    );
+                  },
               child: Text(
                 'FORGOT PASSWORD',
                 style: TextStyle(
@@ -289,3 +279,13 @@ class _WebViewPageState extends State<WebViewPage> {
     );
   }
 }
+
+
+void openWebView(String url, String title, BuildContext context) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => WebViewFile(initialUrl: url, title: title),
+      ),
+    );
+  }

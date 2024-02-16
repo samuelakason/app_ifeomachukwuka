@@ -101,28 +101,28 @@ class _AdminPageState extends State<AdminPage> {
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
-                                  _buildWebBox('Auction', Icons.gavel_rounded, 'https://ifeomachukwuka.rechargenow.ng/auctions'),
-                                  _buildWebBox('Events', Icons.event, 'https://ifeomachukwuka.rechargenow.ng/buy-online'),
+                                  _buildWebBox('Auction', Icons.gavel_rounded, 'https://ifeomachukwuka.ng/auctions'),
+                                  _buildWebBox('Events', Icons.event, 'https://ifeomachukwuka.ng/buy-online'),
                                 ],
                               ),
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
-                                  _buildWebBox('Drinks', Icons.local_drink, 'https://ifeomachukwuka.rechargenow.ng/categories'),
-                                  _buildWebBox('Advert', Icons.announcement, 'https://ifeomachukwuka.rechargenow.ng/auctions/mobile-app-advert'),
+                                  _buildWebBox('Drinks', Icons.local_drink, 'https://ifeomachukwuka.ng/categories'),
+                                  _buildWebBox('Advert', Icons.announcement, 'https://ifeomachukwuka.ng/auctions/mobile-app-advert'),
                                 ],
                               ),
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
-                                  _buildWebBox('My Account', Icons.person, 'https://ifeomachukwuka.rechargenow.ng/app/login'),
-                                  _buildWebBox('Contact Us', Icons.phone, 'https://ifeomachukwuka.rechargenow.ng/contact-us'),
+                                  _buildWebBox('My Account', Icons.person, 'https://ifeomachukwuka.ng/app/login'),
+                                  _buildWebBox('Contact Us', Icons.phone, 'https://ifeomachukwuka.ng/contact-us'),
                                 ],
                               ),
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
-                                  _buildWebBox('Logistics', Icons.local_shipping, 'https://ifeomachukwuka.rechargenow.ng/coming-soon'),
+                                  _buildWebBox('Logistics', Icons.local_shipping, 'https://ifeomachukwuka.ng/coming-soon'),
                                 ],
                               ),
                             ],
@@ -140,9 +140,9 @@ class _AdminPageState extends State<AdminPage> {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     _buildFooterButton('Home', Icons.home, ''),
-                    _buildFooterButton('Auction', Icons.gavel_rounded, 'https://ifeomachukwuka.rechargenow.ng/auctions'),
-                    _buildFooterButton('Events', Icons.event, 'https://ifeomachukwuka.rechargenow.ng/buy-online'),
-                    _buildFooterButton('More', Icons.more_vert, 'https://example.com/profile'),
+                    _buildFooterButton('Auction', Icons.gavel_rounded, 'https://ifeomachukwuka.ng/auctions'),
+                    _buildFooterButton('Events', Icons.event, 'https://ifeomachukwuka.ng/buy-online'),
+                    _buildFooterButton('More', Icons.more_vert, 'https://ifeomachukwuka.ng'),
                   ],
                 ),
               ),

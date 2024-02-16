@@ -34,24 +34,13 @@ class MorePage extends StatelessWidget {
                         padding: const EdgeInsets.symmetric(horizontal: 20),
                         child: Column(
                           children: [
-                            // Row(
-                            //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            //   children: [
-                            //     _buildBox(
-                            //       'OUR NEWSROOM',
-                            //       Icons.gavel_rounded,
-                            //       'https://ifeomachukwuka.rechargenow.ng/blogs',
-                            //       context,
-                            //     ),
-                            //   ],
-                            // ),
                             Row(
   mainAxisAlignment: MainAxisAlignment.spaceBetween,
   children: [
     Expanded(
   child: ElevatedButton(
     onPressed: () => openWebView(
-      'https://ifeomachukwuka.rechargenow.ng/blogs',
+      'https://ifeomachukwuka.ng/blogs',
       'OUR NEWSROOM',
       context,
     ),
@@ -92,53 +81,6 @@ class MorePage extends StatelessWidget {
 
 
 
-// Row(
-//   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-//   children: [
-//     Expanded(
-//   child: ElevatedButton(
-//     onPressed: () => openWebView(
-//       'https://ifeomachukwuka.rechargenow.ng/blogs',
-//       'OUR NEWSROOM',
-//       context,
-//     ),
-//     style: ButtonStyle(
-//       backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
-//       shape: MaterialStateProperty.all<OutlinedBorder>(
-//         RoundedRectangleBorder(
-//           borderRadius: BorderRadius.circular(8),
-//         ),
-//       ),
-//     ),
-//     child: Container(
-//       padding: EdgeInsets.symmetric(horizontal: 0, vertical: 10),
-//       //padding: EdgeInsets.symmetric(horizontal: 5, vertical: 10),
-//       child: Row(
-//         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-//         children: [
-//           Text(
-//             'VISIT OUR NEWSROOM2',
-//             style: TextStyle(
-//               color: Colors.black,
-//             ),
-//           ),
-//            SizedBox(width: 100),
-//           Icon(
-//             Icons.arrow_forward,
-//             color: Colors.black,
-//           ),
-//         ],
-//       ),
-//     ),
-//   ),
-// ),
-
-//   ],
-// ),
-
-
-
-
                           ],
                         ),
                       ),
@@ -162,13 +104,13 @@ class MorePage extends StatelessWidget {
                     context,
                     'Auction',
                     Icons.gavel_rounded,
-                    'https://ifeomachukwuka.rechargenow.ng/auctions',
+                    'https://ifeomachukwuka.ng/auctions',
                   ),
                   _buildFooterButton(
                     context,
                     'Events',
                     Icons.event,
-                    'https://ifeomachukwuka.rechargenow.ng/buy-online',
+                    'https://ifeomachukwuka.ng/buy-online',
                   ),
                   _buildFooterButton(
                     context,
@@ -260,11 +202,6 @@ class MorePage extends StatelessWidget {
           children: [
             Row(
               children: [
-                // Icon(
-                //   iconData,
-                //   color: Color.fromARGB(255, 61, 101, 157),
-                // ),
-                // SizedBox(width: 70), // Add space between icon and label
                 Text(
                   label,
                   style: TextStyle(
@@ -274,7 +211,6 @@ class MorePage extends StatelessWidget {
                 ),
               ],
             ),
-            //SizedBox(width: 190),
             SizedBox(width: 180), // Add space between label and arrow
             Icon(
               Icons.arrow_forward,
@@ -306,18 +242,3 @@ class WebViewPage extends StatelessWidget {
     );
   }
 }
-
-// Dummy classes for illustration purposes
-// class AdminPage extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(
-//         title: Text('Admin Page'),
-//       ),
-//       body: Center(
-//         child: Text('Admin Page Content'),
-//       ),
-//     );
-//   }
-// }
