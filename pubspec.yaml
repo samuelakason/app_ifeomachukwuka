@@ -3,7 +3,7 @@ description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
-publish_to: "none" # Remove this line if you wish to publish to pub.dev
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -20,7 +20,7 @@ publish_to: "none" # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+4
 
 environment:
-  sdk: ">=2.18.6 <3.0.0"
+  sdk: '>=2.18.6 <3.0.0'
 
 dependencies:
   flutter:
@@ -30,16 +30,16 @@ dependencies:
   cupertino_icons: ^1.0.2
   webview_flutter: ^3.0.4
   provider: ^6.0.5
-  fluttertoast: ^8.2.4
+  fluttertoast: ^8.1.2
   url_launcher: ^6.0.10
   carousel_slider: ^4.0.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^3.0.1
+  flutter_lints: ^2.0.0
   flutter_native_splash: ^2.2.16
-  flutter_launcher_icons: ^0.13.1
+  flutter_launcher_icons: "^0.11.0"
 
 flutter_native_splash:
   color: "#2a285a"
@@ -72,13 +72,8 @@ flutter:
     - assets/products/
     - assets/banner/
     - assets/intro/
-    - assets/logo/white.png
   uses-material-design: true
-  fonts:
-    - family: Satoshi
-      fonts:
-        - asset: font/Satoshi/Satoshi-Regular.otf
-
-    - family: Nunito
-      fonts:
-        - asset: font/Nunito/Nunito-Regular.ttf
+  # fonts:
+  # - family: Satoshi
+  #   fonts:
+  #     - asset: fonts/Satoshi.ttf

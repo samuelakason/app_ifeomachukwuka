@@ -59,7 +59,7 @@ android {
 
     defaultConfig {
         applicationId "com.ifeomachukwuka.icnl"
-        minSdkVersion 21
+        minSdkVersion 20
         targetSdkVersion 33  // Update to target Android 13 (API level 33)
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
